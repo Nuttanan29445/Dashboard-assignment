@@ -4,44 +4,54 @@
 
 ```
 git clone https://github.com/Nuttanan29445/Dashboard-assignment.git
-cd solidithai-assignment
+cd Dashboard-assignment
 npm install
 npm run dev
 ```
 
 ## How to use this website?
 
-#### Step1: Sign In with username:TestLogin and password: 1234 and click "Log in" button
+#### Step1: Sign In
 
-![alt text](ImagesWebsite/Step1.jpg)
+##### Sign In with username: TestLogin and password: 1234, then click "Log in" button
 
-#### If you type wrong username or password
+![alt text](public/ImagesWebsite/Step1.jpg)
 
-![alt text](ImagesWebsite/WrongLogin.jpg)
+##### If you enter the wrong username or password, you will see an error message:
 
-#### Step2: Before using the website, there will be a modal welcome message. And click "Get Started"
+![alt text](public/ImagesWebsite/WrongLogin.jpg)
 
-![alt text](ImagesWebsite/Step2.jpg)
+#### Step2: Welcome Message
 
-#### Step3: After that, you will be taken to the Dashboard page which shows a list of users.
+##### After logging in, you will see a welcome modal. Click "Get Started" to proceed.
 
-##### Desktop
+![alt text](public/ImagesWebsite/Step2.jpg)
 
-![alt text](ImagesWebsite/Step3.jpg)
+#### Step3: Dashboard Page
 
-##### Mobile
+##### After that, you will be taken to the Dashboard page which shows a list of users.
 
-![alt text](ImagesWebsite/Mobile.jpg)
+##### Desktop:
 
-#### This page can be searched and filtered to sort the data by (Id, Date) and can be sorted from highest to lowest or lowest to highest.
+![alt text](public/ImagesWebsite/Step3.jpg)
 
-![alt text](ImagesWebsite/StepSearchAndFilter.jpg)
+##### Mobile:
 
-#### step4: Click the "See detail" button and there will be a Modal showing the information of that user.
+![alt text](public/ImagesWebsite/Mobile.jpg)
 
-![alt text](ImagesWebsite/Step4.jpg)
-![alt text](ImagesWebsite/ModalDetail.jpg)
+##### The Dashboard allows you to search, filter, and sort the data by Id and Date, with options to sort either in ascending or descending order.
 
-#### step5: You can click "Sign out" button to log out of the website
+![alt text](public/ImagesWebsite/StepSearchAndFilter.jpg)
 
-![alt text](ImagesWebsite/Step5.jpg)
+#### step4: View User Details
+
+##### Click the "See detail" button to open a modal showing detailed information about the user.
+
+![alt text](public/ImagesWebsite/Step4.jpg)
+![alt text](public/ImagesWebsite/ModalDetail.jpg)
+
+#### step5: Sign out
+
+##### You can log out by clicking the "Sign out" button.
+
+![alt text](public/ImagesWebsite/Step5.jpg)

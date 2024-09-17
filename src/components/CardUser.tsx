@@ -22,7 +22,7 @@ const CardUser = ({
   DropdownsortBy,
   DropdownsortOrder,
 }: CardProp) => {
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState<boolean>(false);
   const [selectedData, setSelectedData] = useState<IUser | null>(null);
 
   const { sortedData } = useSort(

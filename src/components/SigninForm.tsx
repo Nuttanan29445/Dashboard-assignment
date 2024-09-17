@@ -4,10 +4,10 @@ import { useNavigate } from "react-router-dom";
 import UseAuthContext from "../hooks/use-auth-context";
 
 const SigninForm = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
   const { signIn } = UseAuthContext();
-  const [error, setError] = useState("");
+  const [error, setError] = useState<string>("");
   const navigate = useNavigate();
 
   const handleLogin = (e: React.FormEvent<HTMLFormElement>) => {

@@ -17,8 +17,8 @@ interface OptionDropdown {
 
 const Home = () => {
   const data: IUser[] = dataDashboard;
-  const [isModalWelcome, setIsModalWelcome] = useState(true);
-  const [searchText, setSearchText] = useState("");
+  const [isModalWelcome, setIsModalWelcome] = useState<boolean>(true);
+  const [searchText, setSearchText] = useState<string>("");
   const [sortBy, setSortBy] = useState<OptionDropdown | null>({
     label: "Date",
     value: "Date",

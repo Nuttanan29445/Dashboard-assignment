@@ -20,7 +20,9 @@ const UserProfile = ({ data }: userProfileProps) => {
         />
         <div className="mt-4 text-xl font-bold">{name}</div>
         <div className="text-sm text-gray-500">{role}</div>
-        <div className="text-center mt-2 text-gray-600 mb-2">{aboutMe}</div>
+        <div className="text-center mt-2 text-gray-600 mb-2 max-w-md">
+          {aboutMe}
+        </div>
       </div>
       <div className="flex flex-col gap-6 mt-2">
         <Detail>
@@ -40,7 +42,7 @@ const UserProfile = ({ data }: userProfileProps) => {
 
         <Detail className="pb-1">
           <div>Skills:</div>
-          <div className="flex gap-1">
+          <div className="flex gap-1 flex-wrap">
             {skills?.map((skill) => {
               return (
                 <div
@@ -66,7 +68,7 @@ interface detailProps {
 const Detail = ({ children, className }: detailProps) => {
   return (
     <div
-      className={`flex gap-2 border-b-[1px] border-black text-gray-500 items-center text-sm ${className}`}
+      className={`flex gap-2 border-b-[1px] border-black text-gray-500 items-center text-sm ${className} w-full max-w-md`}
     >
       {children}
     </div>
